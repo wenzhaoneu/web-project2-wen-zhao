@@ -1,0 +1,88 @@
+
+#container {
+    display: grid;
+    height:100%;
+    width: 80%;
+    grid-template-rows: 1fr 2fr 2fr;
+    position: fixed;
+    left:50%;
+    transform: translate(-50%, 0);
+    padding: 3px;
+}
+
+
+.tittle {
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#header {
+    background-image: url("https://www.playmonster.com/wp-content/uploads/2020/04/SET_FamilyGames_digital.png");
+    background-position:center;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    margin: 3px;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: black;
+    
+}
+
+#container > div {
+    border: 2px;
+    background-color: paleturquoise;
+}
+
+#start {
+    width: 200px;
+    height: 100px;
+    transition: 500ms;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("start1.png");
+    border-radius: 18px;
+    border: 1px solid white;
+
+}
+
+#borderimg2 { 
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url("https://img.pngio.com/free-border-png-download-free-clip-art-free-clip-art-on-clipart-png-border-1600_1183.png") 30 stretch;
+  }
+
+.start:hover{
+    width: 250px;
+    height: 130px;
+}
+
+#rules {
+    width: 200px;
+    height: 100px;
+    transition: 500ms;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 18px;
+    border: 1px solid white;
+    background-image: url("https://ichef.bbci.co.uk/images/ic/448xn/p085mwhc.png");
+}
+
+.rules:hover{
+    width: 250px;
+    height: 130px;
+}
